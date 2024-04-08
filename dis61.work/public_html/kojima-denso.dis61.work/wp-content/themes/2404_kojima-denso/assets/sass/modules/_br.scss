@@ -1,0 +1,17 @@
+@use "../mixin/breakpoint" as *;
+
+.br-sm {
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.br-lg {
+  display: block;
+
+  @include md {
+    display: none;
+  }
+}

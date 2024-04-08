@@ -1,0 +1,44 @@
+@use "../mixin/breakpoint" as *;
+
+:root {
+    --white  : #FFFFFF;
+    --orange : #F58F04;
+    --red    : #F54404;
+    --gray   : #F7F8FA;
+    --black  : #000000;
+
+    --font-family : 'Noto Sans JP', sans-serif;
+
+    --font-weight__regular: 400;
+    --font-weight__medium : 500;
+    --font-weight__bold   : 700; 
+    --font-weight__black  : 900; 
+
+    --width : calc(100% - 72px);
+    --width2: calc(100% - 40px);
+
+    --content-width  : 1088px;
+
+    --height__adminbar : 32px;
+    --height__header   : 76px;
+
+    --zindex__hamburger: 900;
+    --zindex__header   : 1000;
+
+    --shadow: 0px 3px 6px #00000029;
+
+    --gradient : linear-gradient(180deg, var(--white) 0%, var(--white) 32%, var(--green4) 32%, var(--green4) 100%);
+}
+
+@include md {
+    :root{
+        --height-header: 65px;
+        --gradient : linear-gradient(180deg, var(--white) 0%, var(--white) 40%, var(--green4) 40%, var(--green4) 100%);
+    }
+}
+
+@include ad {
+    :root {
+        --height__adminbar : 46px;
+    }
+}

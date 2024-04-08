@@ -1,0 +1,48 @@
+$xl: 1300px;  //---pc--
+$lg: 1023px;  //---pc---
+$md: 768px;   //---tab---
+$sm: 600px;   //---sm----
+$ad: 782px;   //---admin-bar---
+
+@mixin xl {
+  @media (max-width: ($xl)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: ($lg)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: ($md)) {
+    @content;
+  }
+
+}
+@mixin sm {
+  @media (max-width: ($sm)) {
+    @content;
+  }
+}
+@mixin ad {
+  @media (max-width: ($ad)) {
+    @content;
+  }
+}
+
+
+.sp-only {
+  display: none;
+
+  @include md {
+    display: block;
+  }
+}
+.pc-only {
+  display: block;
+
+  @include md {
+    display: none;
+  }
+}

@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.sp-only {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: block;
+}
+@media (max-width: 768px) {
+  .pc-only {
+    display: none;
+  }
+}
+
+:root {
+  --white: #FFFFFF;
+  --orange: #F58F04;
+  --red: #F54404;
+  --gray: #F7F8FA;
+  --black: #000000;
+  --font-family: "Noto Sans JP", sans-serif;
+  --font-weight__regular: 400;
+  --font-weight__medium: 500;
+  --font-weight__bold: 700;
+  --font-weight__black: 900;
+  --width: calc(100% - 72px);
+  --width2: calc(100% - 40px);
+  --content-width: 1088px;
+  --height__adminbar: 32px;
+  --height__header: 76px;
+  --zindex__hamburger: 900;
+  --zindex__header: 1000;
+  --shadow: 0px 3px 6px #00000029;
+  --gradient: linear-gradient(180deg, var(--white) 0%, var(--white) 32%, var(--green4) 32%, var(--green4) 100%);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --height-header: 65px;
+    --gradient: linear-gradient(180deg, var(--white) 0%, var(--white) 40%, var(--green4) 40%, var(--green4) 100%);
+  }
+}
+@media (max-width: 782px) {
+  :root {
+    --height__adminbar: 46px;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight__medium);
+  color: var(--gray);
+  background-color: var(--white);
+  line-height: 1.2;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  opacity: 0.5;
+}
+
+.br-sm {
+  display: none;
+}
+@media (max-width: 600px) {
+  .br-sm {
+    display: block;
+  }
+}
+
+.br-lg {
+  display: block;
+}
+@media (max-width: 768px) {
+  .br-lg {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
