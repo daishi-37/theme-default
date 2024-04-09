@@ -16,8 +16,20 @@
         <header class="header">
             <div class="header__inner">
                 <div class="header__logo">
+                    <img src="<?php echo THEMEIMG; ?>/logo.png" alt="" class="header__logo-img">
                 </div>
                 <nav id="global-nav" class="header__navi">
+                    <?php
+                        wp_nav_menu(array( 
+                            'container'       => 'nav', 
+                            'container_id'    => 'global-nav',
+                            'container_class' => 'header__navi',
+                            'menu_class'      => 'header__navi-lists',
+                            'add_li_class'    => 'header__navi-item',
+                            'add_a_class'     => 'header__navi-link',
+                            'theme_location'  => 'global-nav', 
+                        )); 
+                    ?>
                 </nav>
                 <div class="header__hamburger-button">
                 </div>

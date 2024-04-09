@@ -86,8 +86,7 @@ add_filter('nav_menu_link_attributes', 'my_nav_add_class_link', 1, 3);
 function my_post_has_archive( $args, $post_type ) {
     if ( 'post' == $post_type ) {
         $args['rewrite'] = true;
-        $args['has_archive'] = 'news'; //任意のスラッグ名　←アーカイブページを有効に
-        $args['label'] = 'お知らせ'; //管理画面左ナビに「投稿」の代わりに表示される
+        $args['label'] = '商品(Welcart用)'; //管理画面左ナビに「投稿」の代わりに表示される
     }
     return $args;
 }
